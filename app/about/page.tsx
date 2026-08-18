@@ -7,7 +7,7 @@ import styles from './about.module.css';
 export const metadata: Metadata = {
   title: 'About — Sweetwater IT',
   description:
-    'Staffing and AI training. LATAM talent for US firms, and applied AI that stays in the work.',
+    'Services: technology talent for US companies, and AI training that stays in the work.',
 };
 
 export default function AboutPage() {
@@ -27,12 +27,10 @@ export default function AboutPage() {
 
       <div className={styles.body}>
         <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
-          <h1 id="about-title" className={site.title}>
-            Staffing and AI training.
+          <p className={styles.eyebrow}>Services</p>
+          <h1 id="about-title" className={site.lede}>
+            Technology talent for US companies, and AI training that stays in the work.
           </h1>
-          <p className={site.lede}>
-            LATAM talent for US firms, and AI implementation that stays in the work.
-          </p>
           <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
             Get in touch
           </a>

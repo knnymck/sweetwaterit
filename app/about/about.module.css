@@ -13,6 +13,15 @@
   align-items: flex-start;
 }
 
+.introduction .eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .introduction .contactButton {
   margin-top: 20px;
 }
