@@ -42,10 +42,22 @@ export default function Home() {
 
       <section className={styles.technologies} aria-label="Technologies we work with">
         <p>Technologies we work with</p>
-        <div className={styles.logoGrid}>
-          {technologies.map(([src, alt, width]) => (
-            <Image key={src} src={src} alt={alt} width={width} height={48} />
-          ))}
+        <div className={styles.logoViewport}>
+          <div className={styles.logoTrack}>
+            {[0, 1].map((copy) => (
+              <div
+                key={copy}
+                className={styles.logoSet}
+                aria-hidden={copy === 1 ? true : undefined}
+              >
+                {technologies.map(([src, alt, width]) => (
+                  <span className={styles.logoTile} key={`${copy}-${src}`}>
+                    <Image src={src} alt={copy === 0 ? alt : ''} width={width} height={48} />
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </main>
