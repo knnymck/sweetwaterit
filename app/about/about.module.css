@@ -49,8 +49,23 @@
   text-transform: uppercase;
 }
 
-.member h3 {
+.nameRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   margin: 18px 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin: 0;
   font-family: var(--font-sans);
   font-size: clamp(28px, 3vw, 40px);
   font-weight: 500;
@@ -61,23 +76,16 @@
 .linkedIn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   border: 1px solid rgba(237, 238, 233, 0.3);
   background: transparent;
   color: var(--fg-1);
-  padding: 8px 16px 8px 8px;
+  padding: 13px 18px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .linkedIn:hover,

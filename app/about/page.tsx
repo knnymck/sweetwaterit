@@ -44,15 +44,17 @@ export default function AboutPage() {
         </h2>
         <article className={styles.member}>
           <p className={styles.role}>Founder</p>
-          <h3>Kenny Mack</h3>
-          <a className={styles.linkedIn} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
+          <div className={styles.nameRow}>
             <Image
               className={styles.avatar}
               src="/images/ava1.jpg"
-              alt="Kenny Mack"
-              width={32}
-              height={32}
+              alt=""
+              width={40}
+              height={40}
             />
+            <h3>Kenny Mack</h3>
+          </div>
+          <a className={styles.linkedIn} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
             LinkedIn <span aria-hidden="true">↗</span>
           </a>
         </article>
