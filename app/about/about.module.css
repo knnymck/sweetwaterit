@@ -1,0 +1,182 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #0a0a0a;
+  color: var(--fg-1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px clamp(20px, 4vw, 48px) 0;
+}
+
+.wordmark {
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wordmark span {
+  color: var(--fg-2);
+  font-weight: 400;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navigation a {
+  color: var(--fg-2);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a[aria-current='page'] {
+  color: var(--fg-1);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1.4fr) minmax(220px, 0.7fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: end;
+  min-height: 0;
+  padding: 28px clamp(20px, 4vw, 48px) 36px;
+}
+
+.verticalLabel {
+  margin: 0;
+  align-self: stretch;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+  max-width: 18ch;
+}
+
+.introduction h1 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(34px, 4.4vw, 58px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.introduction p {
+  max-width: 36ch;
+  margin: 18px 0 0;
+  color: var(--fg-2);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  margin-top: 28px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 13px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contactButton:hover {
+  filter: brightness(0.92);
+}
+
+.team {
+  min-width: 0;
+}
+
+.member {
+  display: grid;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(237, 238, 233, 0.14);
+}
+
+.role {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.member h3 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.linkedIn {
+  color: var(--fg-2);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.linkedIn:hover {
+  color: var(--fg-1);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .body {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 22px;
+    padding-bottom: 24px;
+  }
+
+  .verticalLabel {
+    align-self: start;
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .introduction {
+    max-width: none;
+  }
+}
