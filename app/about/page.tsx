@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import site from '../site.module.css';
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
@@ -10,27 +11,36 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className={styles.page}>
-      <header className={styles.header}>
-        <Link className={styles.wordmark} href="/" aria-label="Sweetwater IT home">
+    <main className={site.page}>
+      <header className={site.header}>
+        <Link className={site.wordmark} href="/" aria-label="Sweetwater IT home">
           SWEETWATER<span>IT</span>
         </Link>
-        <nav className={styles.navigation} aria-label="Primary navigation">
-          <Link href="/about" aria-current="page">About</Link>
+        <nav className={site.navigation} aria-label="Primary navigation">
+          <Link href="/about" aria-current="page">
+            About
+          </Link>
           <a href="mailto:contact@sweetwaterit.com">Contact</a>
         </nav>
       </header>
 
       <section className={styles.introduction} aria-labelledby="about-title">
-        <h1 id="about-title">Hire the team. Make AI stick.</h1>
-        <a className={styles.contactButton} href="mailto:contact@sweetwaterit.com">
+        <h1 id="about-title" className={`${site.title} ${styles.title}`}>
+          Hire the team. Make AI stick.
+        </h1>
+        <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:contact@sweetwaterit.com">
           Get in touch <span aria-hidden="true">↗</span>
         </a>
-        <p>We staff LATAM technical talent into US firms, and we teach, consult, and staff applied and agentic AI — on your time zone.</p>
+        <p className={`${site.lede} ${styles.lede}`}>
+          We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
+          and agentic AI — on your time zone.
+        </p>
       </section>
 
       <section className={styles.team} aria-labelledby="team-title">
-        <h2 id="team-title" className={styles.visuallyHidden}>Team</h2>
+        <h2 id="team-title" className={styles.visuallyHidden}>
+          Team
+        </h2>
         <article className={styles.member}>
           <p className={styles.role}>Founder</p>
           <h3>Kenny Mack</h3>

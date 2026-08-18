@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import site from './site.module.css';
 import styles from './page.module.css';
 
 const technologies = [
@@ -14,12 +15,12 @@ const technologies = [
 
 export default function Home() {
   return (
-    <main className={styles.page}>
-      <header className={styles.header}>
-        <Link className={styles.wordmark} href="/" aria-label="Sweetwater IT home">
+    <main className={site.page}>
+      <header className={site.header}>
+        <Link className={site.wordmark} href="/" aria-label="Sweetwater IT home">
           SWEETWATER<span>IT</span>
         </Link>
-        <nav className={styles.navigation} aria-label="Primary navigation">
+        <nav className={site.navigation} aria-label="Primary navigation">
           <Link href="/about">About</Link>
           <a href="mailto:contact@sweetwaterit.com">Contact</a>
         </nav>
@@ -27,12 +28,14 @@ export default function Home() {
 
       <section className={styles.hero} aria-labelledby="hero-title">
         <p className={styles.kicker}>Texas · 2017 · LATAM · US clocks</p>
-        <h1 id="hero-title">Hire the team. Make AI stick.</h1>
-        <p className={styles.introduction}>
+        <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
+          Hire the team. Make AI stick.
+        </h1>
+        <p className={site.lede}>
           We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
           and agentic AI — on your time zone.
         </p>
-        <a className={styles.contactButton} href="mailto:contact@sweetwaterit.com">
+        <a className={site.contactButton} href="mailto:contact@sweetwaterit.com">
           Start a conversation <span aria-hidden="true">↗</span>
         </a>
       </section>
