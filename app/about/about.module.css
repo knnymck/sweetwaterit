@@ -43,9 +43,8 @@
 .role {
   margin: 0;
   color: var(--accent);
-  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -66,11 +65,7 @@
 
 .member h3 {
   margin: 0;
-  font-family: var(--font-sans);
-  font-size: clamp(28px, 3vw, 40px);
   font-weight: 500;
-  letter-spacing: -0.035em;
-  line-height: 1;
 }
 
 .linkedIn {
@@ -81,7 +76,6 @@
   background: transparent;
   color: var(--fg-1);
   padding: 13px 18px;
-  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0;
   text-decoration: none;

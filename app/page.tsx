@@ -26,7 +26,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className={styles.hero} aria-labelledby="hero-title">
+      <section className={`${styles.hero} ${site.copy}`} aria-labelledby="hero-title">
         <p className={styles.kicker}>Texas · 2017 · LATAM · US clocks</p>
         <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
           Hire the team. Make AI stick.

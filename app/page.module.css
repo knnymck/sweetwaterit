@@ -9,9 +9,8 @@
 .kicker {
   margin: 0 0 16px;
   color: var(--accent);
-  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 

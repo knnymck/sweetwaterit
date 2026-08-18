@@ -25,7 +25,7 @@ export default function AboutPage() {
         </nav>
       </header>
 
-      <section className={styles.introduction} aria-labelledby="about-title">
+      <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
         <h1 id="about-title" className={`${site.title} ${styles.title}`}>
           Hire the team. Make AI stick.
         </h1>
@@ -38,7 +38,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className={styles.team} aria-labelledby="team-title">
+      <section className={`${styles.team} ${site.copy}`} aria-labelledby="team-title">
         <h2 id="team-title" className={styles.visuallyHidden}>
           Team
         </h2>
