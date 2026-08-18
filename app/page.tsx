@@ -15,16 +15,6 @@ const technologies = [
 export default function Home() {
   return (
     <main className={styles.page}>
-      <Image
-        className={styles.backgroundImage}
-        src="/images/rift-hero-banner-1.png"
-        alt="Leaders discussing AI workflows at a conference table"
-        fill
-        priority
-        sizes="100vw"
-      />
-      <div className={styles.overlay} />
-
       <header className={styles.header}>
         <Link className={styles.wordmark} href="/" aria-label="Sweetwater IT home">
           SWEETWATER<span>IT</span>
