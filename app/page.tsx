@@ -28,7 +28,7 @@ export default function Home() {
 
       <section className={`${styles.hero} ${site.copy}`} aria-labelledby="hero-title">
         <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
-          LATAM staffing and applied AI implementation — on your time zone.
+          Technical capacity for growing companies.
         </h1>
         <a className={site.contactButton} href="mailto:kenny.mack@sweetwaterit.com">
           Start a conversation

@@ -7,7 +7,7 @@ import styles from './about.module.css';
 export const metadata: Metadata = {
   title: 'About — Sweetwater IT',
   description:
-    'Staffing and applied AI. LATAM talent for US firms, and AI implementation that stays in the work.',
+    'Staffing and AI training. LATAM talent for US firms, and applied AI that stays in the work.',
 };
 
 export default function AboutPage() {
@@ -25,17 +25,31 @@ export default function AboutPage() {
         </nav>
       </header>
 
-      <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
-        <h1 id="about-title" className={`${site.title} ${styles.title}`}>
-          Staffing and applied AI.
-        </h1>
+      <div className={styles.body}>
         <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
           Get in touch
         </a>
-        <p className={`${site.lede} ${styles.lede}`}>
-          LATAM talent for US firms, and AI implementation that stays in the work.
-        </p>
-      </section>
+
+        <section className={`${styles.services} ${site.copy}`} aria-label="What we do">
+          <article className={styles.panel}>
+            <h1>Staffing</h1>
+            <ul className={styles.points}>
+              <li>LATAM engineers, CAD, and operators</li>
+              <li>US hours, US tools, US standups</li>
+              <li>On your team — not a distant bench</li>
+            </ul>
+          </article>
+
+          <article className={styles.panel}>
+            <h2>AI training</h2>
+            <ul className={styles.points}>
+              <li>Applied AI in the tools you already run</li>
+              <li>Workflows a team can keep after we leave</li>
+              <li>Training that ships a system, not a deck</li>
+            </ul>
+          </article>
+        </section>
+      </div>
 
       <section className={`${styles.team} ${site.copy}`} aria-labelledby="team-title">
         <h2 id="team-title" className={styles.visuallyHidden}>
@@ -53,7 +67,12 @@ export default function AboutPage() {
             />
             <h3>Kenny Mack, Applied AI Engineer</h3>
           </div>
-          <a className={`${site.contactButton} ${styles.linkedIn}`} href="https://www.linkedin.com/in/knnymck/" target="_blank" rel="noreferrer">
+          <a
+            className={`${site.contactButton} ${styles.linkedIn}`}
+            href="https://www.linkedin.com/in/knnymck/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
         </article>
