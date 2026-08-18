@@ -52,7 +52,7 @@ export default function AboutPage() {
               width={40}
               height={40}
             />
-            <h3>Kenny Mack</h3>
+            <h3>Kenny Mack, Applied AI Engineer</h3>
           </div>
           <a className={`${site.contactButton} ${styles.linkedIn}`} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
             LinkedIn
