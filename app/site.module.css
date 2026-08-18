@@ -6,6 +6,8 @@
   height: 100dvh;
   min-height: 100dvh;
   overflow: hidden;
+  padding-right: clamp(32px, 8vw, 104px);
+  padding-left: clamp(32px, 8vw, 104px);
   background: #0a0a0a;
   color: var(--fg-1);
   font-family: var(--font-sans);
@@ -29,7 +31,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 22px clamp(20px, 4vw, 48px) 0;
+  padding: 22px 0 0;
 }
 
 .wordmark {
