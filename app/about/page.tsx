@@ -7,7 +7,7 @@ import styles from './about.module.css';
 export const metadata: Metadata = {
   title: 'About — Sweetwater IT',
   description:
-    'Staffing and AI training. LATAM talent for US firms, and applied AI that stays in the work.',
+    'Services: technology talent for US companies, and AI training that stays in the work.',
 };
 
 export default function AboutPage() {
@@ -26,13 +26,22 @@ export default function AboutPage() {
       </header>
 
       <div className={styles.body}>
-        <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
-          Get in touch
-        </a>
+        <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
+          <p className={styles.eyebrow}>Services</p>
+          <h1 id="about-title" className={site.lede}>
+            Technology talent for US companies, and AI training that stays in the work.
+          </h1>
+          <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
+            Get in touch
+          </a>
+        </section>
 
         <section className={`${styles.services} ${site.copy}`} aria-label="What we do">
           <article className={styles.panel}>
-            <h1>Staffing</h1>
+            <header className={styles.panelHead}>
+              <span className={styles.index}>01</span>
+              <h2>Staffing</h2>
+            </header>
             <ul className={styles.points}>
               <li>LATAM engineers, CAD, and operators</li>
               <li>US hours, US tools, US standups</li>
@@ -41,7 +50,10 @@ export default function AboutPage() {
           </article>
 
           <article className={styles.panel}>
-            <h2>AI training</h2>
+            <header className={styles.panelHead}>
+              <span className={styles.index}>02</span>
+              <h2>AI training</h2>
+            </header>
             <ul className={styles.points}>
               <li>Applied AI in the tools you already run</li>
               <li>Workflows a team can keep after we leave</li>
