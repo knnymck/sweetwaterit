@@ -10,7 +10,7 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: 'Sweetwater IT — LATAM talent. Applied AI.',
   description:
-    'Sweetwater IT staffs LATAM technical talent into US firms, and teaches, consults, and staffs applied and agentic AI — on your time zone.',
+    'LATAM staffing and applied AI implementation for US firms — on your time zone.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

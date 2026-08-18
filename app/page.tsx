@@ -22,16 +22,15 @@ export default function Home() {
         </Link>
         <nav className={site.navigation} aria-label="Primary navigation">
           <Link href="/about">About</Link>
-          <a href="mailto:contact@sweetwaterit.com">Contact</a>
+          <a href="mailto:kenny.mack@sweetwaterit.com">Contact</a>
         </nav>
       </header>
 
       <section className={`${styles.hero} ${site.copy}`} aria-labelledby="hero-title">
         <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
-          We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
-          and agentic AI — on your time zone.
+          LATAM staffing and applied AI implementation — on your time zone.
         </h1>
-        <a className={site.contactButton} href="mailto:contact@sweetwaterit.com">
+        <a className={site.contactButton} href="mailto:kenny.mack@sweetwaterit.com">
           Start a conversation
         </a>
       </section>

@@ -7,7 +7,7 @@ import styles from './about.module.css';
 export const metadata: Metadata = {
   title: 'About — Sweetwater IT',
   description:
-    'Sweetwater IT staffs LATAM technical talent into US firms, and teaches, consults, and staffs applied and agentic AI — on your time zone.',
+    'Staffing and applied AI. LATAM talent for US firms, and AI implementation that stays in the work.',
 };
 
 export default function AboutPage() {
@@ -21,20 +21,19 @@ export default function AboutPage() {
           <Link href="/about" aria-current="page">
             About
           </Link>
-          <a href="mailto:contact@sweetwaterit.com">Contact</a>
+          <a href="mailto:kenny.mack@sweetwaterit.com">Contact</a>
         </nav>
       </header>
 
       <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
         <h1 id="about-title" className={`${site.title} ${styles.title}`}>
-          Hire the team. Make AI stick.
+          Staffing and applied AI.
         </h1>
-        <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:contact@sweetwaterit.com">
+        <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
           Get in touch
         </a>
         <p className={`${site.lede} ${styles.lede}`}>
-          We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
-          and agentic AI — on your time zone.
+          LATAM talent for US firms, and AI implementation that stays in the work.
         </p>
       </section>
 
@@ -54,7 +53,7 @@ export default function AboutPage() {
             />
             <h3>Kenny Mack, Applied AI Engineer</h3>
           </div>
-          <a className={`${site.contactButton} ${styles.linkedIn}`} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
+          <a className={`${site.contactButton} ${styles.linkedIn}`} href="https://www.linkedin.com/in/knnymck/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
         </article>
