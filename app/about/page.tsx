@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import site from '../site.module.css';
 import styles from './about.module.css';
@@ -45,6 +46,13 @@ export default function AboutPage() {
           <p className={styles.role}>Founder</p>
           <h3>Kenny Mack</h3>
           <a className={styles.linkedIn} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
+            <Image
+              className={styles.avatar}
+              src="/images/ava1.jpg"
+              alt="Kenny Mack"
+              width={32}
+              height={32}
+            />
             LinkedIn <span aria-hidden="true">↗</span>
           </a>
         </article>
