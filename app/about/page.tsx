@@ -30,7 +30,7 @@ export default function AboutPage() {
           Hire the team. Make AI stick.
         </h1>
         <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:contact@sweetwaterit.com">
-          Get in touch <span aria-hidden="true">↗</span>
+          Get in touch
         </a>
         <p className={`${site.lede} ${styles.lede}`}>
           We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
@@ -54,8 +54,8 @@ export default function AboutPage() {
             />
             <h3>Kenny Mack</h3>
           </div>
-          <a className={styles.linkedIn} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
-            LinkedIn <span aria-hidden="true">↗</span>
+          <a className={`${site.contactButton} ${styles.linkedIn}`} href="https://linkedin.com/knnymck" target="_blank" rel="noreferrer">
+            LinkedIn
           </a>
         </article>
       </section>

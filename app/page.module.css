@@ -6,16 +6,8 @@
   padding: 0;
 }
 
-.kicker {
-  margin: 0 0 16px;
-  color: var(--accent);
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
 .title {
-  max-width: 14ch;
+  max-width: 28ch;
 }
 
 .technologies {

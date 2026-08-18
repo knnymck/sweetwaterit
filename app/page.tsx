@@ -27,16 +27,12 @@ export default function Home() {
       </header>
 
       <section className={`${styles.hero} ${site.copy}`} aria-labelledby="hero-title">
-        <p className={styles.kicker}>Texas · 2017 · LATAM · US clocks</p>
         <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
-          Hire the team. Make AI stick.
-        </h1>
-        <p className={site.lede}>
           We staff LATAM technical talent into US firms, and we teach, consult, and staff applied
           and agentic AI — on your time zone.
-        </p>
+        </h1>
         <a className={site.contactButton} href="mailto:contact@sweetwaterit.com">
-          Start a conversation <span aria-hidden="true">↗</span>
+          Start a conversation
         </a>
       </section>
 

@@ -42,7 +42,7 @@
 
 .role {
   margin: 0;
-  color: var(--accent);
+  color: #fff;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -69,23 +69,7 @@
 }
 
 .linkedIn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid rgba(237, 238, 233, 0.3);
-  background: transparent;
-  color: var(--fg-1);
-  padding: 13px 18px;
-  font-weight: 600;
-  letter-spacing: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.linkedIn:hover,
-.linkedIn:focus-visible {
-  border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.08);
+  margin-top: 0;
 }
 
 .visuallyHidden {
