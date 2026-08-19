@@ -8,7 +8,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: 'Sweetwater IT — LATAM talent. Applied AI.',
+  title: 'Sweetwater IT | Technical capacity for growing companies',
   description:
     'Technical capacity for growing companies. LATAM staffing and AI training.',
 };

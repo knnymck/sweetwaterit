@@ -5,7 +5,7 @@ import site from '../site.module.css';
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
-  title: 'About — Sweetwater IT',
+  title: 'About | Sweetwater IT',
   description:
     'Private equity, AI training and implementation, staffing, and recruitment for US companies.',
 };
@@ -13,19 +13,19 @@ export const metadata: Metadata = {
 const offerings = [
   {
     eyebrow: 'Private Equity',
-    copy: 'Technical capacity for portfolio companies — from the first operating review to a working system.',
+    copy: 'Work directly with CTOs and operating partners across portfolio companies to find where AI moves the needle.',
   },
   {
     eyebrow: 'AI Training and Implementation',
-    copy: 'We train the team and implement applied AI in the tools you already run.',
+    copy: 'Work directly with operators and team leads to train people and implement AI in the tools they already use.',
   },
   {
     eyebrow: 'Staffing',
-    copy: 'LATAM technology talent on US hours, placed on your team.',
+    copy: 'Work directly with hiring managers to place LATAM technology talent on US hours, on their team.',
   },
   {
     eyebrow: 'Recruitment',
-    copy: 'We run the search and land the hire — screened for the work, not a resume pile.',
+    copy: 'Work directly with founders and department leads to run the search and land the hire.',
   },
 ] as const;
 

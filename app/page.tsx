@@ -31,7 +31,7 @@ export default function Home() {
           Technical capacity for growing companies.
         </h1>
         <a className={site.contactButton} href="mailto:kenny.mack@sweetwaterit.com">
-          Start a conversation
+          Get in touch
         </a>
       </section>
 

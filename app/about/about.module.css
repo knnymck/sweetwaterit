@@ -9,7 +9,7 @@
 
 .offerings {
   display: grid;
-  gap: 22px;
+  gap: 40px;
 }
 
 .offering {
@@ -19,7 +19,7 @@
 }
 
 .offerings .eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 14px;
   color: var(--accent);
   font-size: 12px;
   font-weight: 500;
@@ -32,7 +32,7 @@
 }
 
 .offerings .contactButton {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .team {
@@ -101,6 +101,6 @@
   }
 
   .offerings {
-    gap: 16px;
+    gap: 28px;
   }
 }
