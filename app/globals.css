@@ -149,3 +149,21 @@ main .btn,.webinar-card .btn,.pricing-card .btn,.reprompt-inner .btn,.booking-de
   cursor:pointer;
   padding:0;
 }
+
+html {
+  color-scheme: dark;
+  background: #050505;
+}
+
+html, body {
+  background: #050505;
+}
+
+body:before {
+  z-index: 9999;
+  background-image: url("/images/grain.png");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+  mix-blend-mode: normal;
+  opacity: 0.045;
+}
