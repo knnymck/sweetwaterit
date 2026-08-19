@@ -7,8 +7,27 @@ import styles from './about.module.css';
 export const metadata: Metadata = {
   title: 'About — Sweetwater IT',
   description:
-    'Services: technology talent for US companies, and AI training that stays in the work.',
+    'Private equity, AI training and implementation, staffing, and recruitment for US companies.',
 };
+
+const offerings = [
+  {
+    eyebrow: 'Private Equity',
+    copy: 'Technical capacity for portfolio companies — from the first operating review to a working system.',
+  },
+  {
+    eyebrow: 'AI Training and Implementation',
+    copy: 'We train the team and implement applied AI in the tools you already run.',
+  },
+  {
+    eyebrow: 'Staffing',
+    copy: 'LATAM technology talent on US hours, placed on your team.',
+  },
+  {
+    eyebrow: 'Recruitment',
+    copy: 'We run the search and land the hire — screened for the work, not a resume pile.',
+  },
+] as const;
 
 export default function AboutPage() {
   return (
@@ -26,40 +45,19 @@ export default function AboutPage() {
       </header>
 
       <div className={styles.body}>
-        <section className={`${styles.introduction} ${site.copy}`} aria-labelledby="about-title">
-          <p className={styles.eyebrow}>Services</p>
-          <h1 id="about-title" className={site.lede}>
-            Technology talent for US companies, and AI training that stays in the work.
+        <section className={`${styles.offerings} ${site.copy}`} aria-labelledby="about-title">
+          <h1 id="about-title" className={styles.visuallyHidden}>
+            Services
           </h1>
+          {offerings.map((offering) => (
+            <article className={styles.offering} key={offering.eyebrow}>
+              <p className={styles.eyebrow}>{offering.eyebrow}</p>
+              <p>{offering.copy}</p>
+            </article>
+          ))}
           <a className={`${site.contactButton} ${styles.contactButton}`} href="mailto:kenny.mack@sweetwaterit.com">
             Get in touch
           </a>
-        </section>
-
-        <section className={`${styles.services} ${site.copy}`} aria-label="What we do">
-          <article className={styles.panel}>
-            <header className={styles.panelHead}>
-              <span className={styles.index}>01</span>
-              <h2>Staffing</h2>
-            </header>
-            <ul className={styles.points}>
-              <li>LATAM engineers, CAD, and operators</li>
-              <li>US hours, US tools, US standups</li>
-              <li>On your team — not a distant bench</li>
-            </ul>
-          </article>
-
-          <article className={styles.panel}>
-            <header className={styles.panelHead}>
-              <span className={styles.index}>02</span>
-              <h2>AI training</h2>
-            </header>
-            <ul className={styles.points}>
-              <li>Applied AI in the tools you already run</li>
-              <li>Workflows a team can keep after we leave</li>
-              <li>Training that ships a system, not a deck</li>
-            </ul>
-          </article>
         </section>
       </div>
 
@@ -77,7 +75,7 @@ export default function AboutPage() {
               width={40}
               height={40}
             />
-            <h3>Kenny Mack, Applied AI Engineer</h3>
+            <h3>Kenny Mack, Solutions Architect</h3>
           </div>
           <a
             className={`${site.contactButton} ${styles.linkedIn}`}
