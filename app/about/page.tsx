@@ -17,15 +17,15 @@ const offerings = [
   },
   {
     eyebrow: 'AI Training and Implementation',
-    copy: 'Work directly with operators and team leads to train people and implement AI in the tools they already use.',
+    copy: 'Train frontline operators and leads to operationalize AI within your current tech stack.',
   },
   {
     eyebrow: 'Staffing',
-    copy: 'Work directly with hiring managers to place LATAM technology talent on US hours, on their team.',
+    copy: 'Scale your technical capacity by embedding vetting talent directly onto your existing teams.',
   },
   {
     eyebrow: 'Recruitment',
-    copy: 'Work directly with founders and department leads to run the search and land the hire.',
+    copy: 'Partner with leadership to lead end-to-end searches that secure high-impact hires.',
   },
 ] as const;
 
