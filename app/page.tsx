@@ -28,7 +28,7 @@ export default function Home() {
 
       <section className={`${styles.hero} ${site.copy}`} aria-labelledby="hero-title">
         <h1 id="hero-title" className={`${site.title} ${styles.title}`}>
-          Technical capacity for sponsor-backed, lower middle-market companies. </br>Scale operations, protect margins, and drive EBITDA growth </br> across your portfolio
+          Technical capacity for sponsor-backed, lower middle-market companies. <br>Scale operations, protect margins, and drive EBITDA growth <br> across your portfolio
         </h1>
         <a className={site.contactButton} href="mailto:kenny.mack@sweetwaterit.com">
           Get in touch
